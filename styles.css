@@ -1,55 +1,179 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background: #f0f2f5;
-    color: #333;
+    font-family: 'IRANSans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    direction: rtl;
+}
+
+header {
+    background-color: #3F51B5;
+    color: #fff;
+    padding: 20px;
     text-align: center;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    background: #fff;
+main {
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
 }
 
-h1, h2 {
-    color: #007bff;
+section {
+    margin-bottom: 30px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 form {
-    display: grid;
-    gap: 10px;
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 5px;
+    display: flex;
+    margin-bottom: 10px;
 }
 
-input, select, button {
+form input[type="text"] {
+    flex: 1;
     padding: 10px;
-    border-radius: 5px;
     border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
-button {
-    background: #007bff;
+form button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #3F51B5;
     color: white;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
 }
 
-table {
-    width: 100%;
-    margin-top: 20px;
-    border-collapse: collapse;
+form button:hover {
+    background-color: #283593;
 }
 
-th, td {
+footer {
+    text-align: center;
     padding: 10px;
-    border: 1px solid #ddd;
+    background-color: #ddd;
 }
 
-th {
-    background: #007bff;
+#grades {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+}
+
+#gradeForm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#gradeForm input,
+#gradeForm select {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#gradeForm button {
+    background-color: #4CAF50;
     color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#gradeForm button:hover {
+    background-color: #388E3C;
+}
+
+#gradeList {
+    list-style: none;
+    padding: 0;
+}
+
+#gradeList li {
+    background: #f8f8f8;
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid transparent;
+}
+
+#gradeList li span {
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+#gradeList strong {
+    color: blue;
+    font-weight: bold;
+}
+
+#gradeList li.accepted {
+    border-left-color: green;
+}
+
+#gradeList li.failed {
+    border-left-color: red;
+}
+
+#gradeList button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#gradeList button:hover {
+    background-color: darkred;
+}
+
+#gradeList button:nth-child(2) {
+    background-color: #ff9800;
+    color: white;
+}
+
+#gradeList button:nth-child(2):hover {
+    background-color: #e68900;
+}
+
+#gradeList button:nth-child(3) {
+    background-color: red;
+    color: white;
+}
+
+#gradeList button:nth-child(3):hover {
+    background-color: darkred;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f8f8f8;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid blue;
+}
+
+ul li.exam {
+    border-left-color: red;
 }
