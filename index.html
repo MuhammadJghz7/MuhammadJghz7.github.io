@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدیریت دروس دانشگاهی</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="container">
+        <h1>مدیریت دروس دانشگاهی</h1>
+
+        <h2>افزودن درس</h2>
+        <form id="scheduleForm">
+            <label>شماره درس:</label>
+            <input type="text" id="courseNumber" required>
+
+            <label>نام درس:</label>
+            <input type="text" id="courseName" required>
+
+            <label>نوع درس:</label>
+            <select id="courseType">
+                <option value="نظری">نظری</option>
+                <option value="عملی">عملی</option>
+            </select>
+
+            <label>ترم اخذ:</label>
+            <input type="text" id="semester" required>
+
+            <!-- جلسه اول -->
+            <h3>جلسه اول</h3>
+            <label>روز:</label>
+            <select id="day1">
+                <option value="شنبه">شنبه</option>
+                <option value="یکشنبه">یکشنبه</option>
+                <option value="دوشنبه">دوشنبه</option>
+                <option value="سه‌شنبه">سه‌شنبه</option>
+            </select>
+
+            <label>ساعت شروع:</label>
+            <input type="time" id="startTime1">
+
+            <label>ساعت پایان:</label>
+            <input type="time" id="endTime1">
+
+            <label>نوع هفته:</label>
+            <select id="weekType1">
+                <option value="هر دو هفته">هر دو هفته</option>
+                <option value="زوج">زوج</option>
+                <option value="فرد">فرد</option>
+            </select>
+
+            <!-- جلسه دوم -->
+            <h3>جلسه دوم (اختیاری)</h3>
+            <label>روز:</label>
+            <select id="day2">
+                <option value="">(بدون جلسه دوم)</option>
+                <option value="شنبه">شنبه</option>
+                <option value="یکشنبه">یکشنبه</option>
+                <option value="دوشنبه">دوشنبه</option>
+                <option value="سه‌شنبه">سه‌شنبه</option>
+            </select>
+
+            <label>ساعت شروع:</label>
+            <input type="time" id="startTime2">
+
+            <label>ساعت پایان:</label>
+            <input type="time" id="endTime2">
+
+            <label>نوع هفته:</label>
+            <select id="weekType2">
+                <option value="">(بدون جلسه دوم)</option>
+                <option value="هر دو هفته">هر دو هفته</option>
+                <option value="زوج">زوج</option>
+                <option value="فرد">فرد</option>
+            </select>
+
+            <button type="submit">افزودن درس</button>
+        </form>
+
+        <h2>برنامه هفتگی</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>شماره درس</th>
+                    <th>نام درس</th>
+                    <th>روز</th>
+                    <th>ساعت شروع</th>
+                    <th>ساعت پایان</th>
+                    <th>نوع هفته</th>
+                </tr>
+            </thead>
+            <tbody id="weeklySchedule"></tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
