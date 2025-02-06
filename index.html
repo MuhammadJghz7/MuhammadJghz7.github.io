@@ -22,73 +22,73 @@
         <section id="grades">
             <h2></h2>
             <form id="gradeForm">
-                <input type="number" id="courseNumber" placeholder="" required>
-                <input type="text" id="courseName" placeholder="" required>
-                <input type="number" id="courseGrade" placeholder="" min="0" max="20">
+                <input type="number" id="courseNumber" placeholder="شملره درس" required>
+                <input type="text" id="courseName" placeholder="نام درس" required>
+                <input type="number" id="courseGrade" placeholder="نمره درس" min="0" max="20">
 
                 <select id="courseType" required>
-                    <option value="disabled selected"></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
+                    <option value="disabled selected">انتخاب نوع درس</option>
+                    <option value="عمومی">عمومی</option>
+                    <option value="پایه">پایه</option>
+                    <option value="اختیاری">اختیاری</option>
+                    <option value="عمومی-اختیاری">عمومی-اختیاری</option>
+                    <option value="الزامی">الزامی</option>
                 </select>
 
-                <input type="text" id="semester" placeholder="">
+                <input type="text" id="semester" placeholder="ترم">
 
-                <button type="submit"></button>
+                <button type="submit">ثبت</button>
             </form>
-            <ul id="gradeList"></ul>
+            <ul id="gradeList">لیست دروس</ul>
         </section>
 
         <section id="schedule">
             <h2></h2>
             <form id="scheduleForm">
-                <label for="cNu"></label>
+                <label for="cNu">شماره درس</label>
                 <input type="number" id="cNu" required>
 
-                <label for="cNa"></label>
+                <label for="cNa">نام درس</label>
                 <input type="text" id="cNa" required>
 
-                <label for="day1"></label>
+                <label for="day1">روز تدریس</label>
                 <select id="day1" required>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
+                    <option value="شنبه">شنبه</option>
+                    <option value="یکشنبه">یکشنبه</option>
+                    <option value="دوشنبه">دوشنبه</option>
+                    <option value="سه شنبه">سه شنبه</option>
                 </select>
 
-                <label for="startTime1"></label>
+                <label for="startTime1">ساعت شروع</label>
                 <input type="time" id="startTime1" required>
 
-                <label for="endTime1"></label>
+                <label for="endTime1">ساعت پایان</label>
                 <input type="time" id="endTime1" required>
 
-                <label for="weekType1"></label>
+                <label for="weekType1">نوع هفته</label>
                 <select id="weekType1" required>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
+                    <option value="زوج">زوج</option>
+                    <option value="فرد">فرد</option>
+                    <option value="هر هفته">هر هفته</option>
                 </select>
 
-                <label for="examDate"></label>
+                <label for="examDate">تاریخ امتحان</label>
                 <input type="date" id="examDate">
 
-                <label for="examStart"></label>
+                <label for="examStart">ساعت شروع</label>
                 <input type="time" id="examStart">
 
-                <label for="examEnd"></label>
+                <label for="examEnd">ساعت پایان</label>
                 <input type="time" id="examEnd">
 
-                <button type="submit"></button>
+                <button type="submit">ثبت</button>
             </form>
 
             <h2></h2>
-            <ul id="weeklySchedule"></ul>
+            <ul id="weeklySchedule">برنامه هفتگی</ul>
 
             <h2></h2>
-            <ul id="examSchedule"></ul>
+            <ul id="examSchedule">برنامه امتحانی</ul>
         </section>
     </main>
 
