@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         grades.forEach((item, index) => {
             const li = document.createElement('li');
 
-            let statusText = item.grade >= 10 ? 'failed' : 'passed';
+            let statusText = item.grade >= 10 ? 'قبول' : 'رد';
             let statusColor = item.grade >= 10 ? 'green' : 'red';
 
             li.innerHTML = `<span>
